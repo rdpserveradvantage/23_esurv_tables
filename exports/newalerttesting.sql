@@ -1,0 +1,51 @@
+-- -----------------------------------
+-- Table structure for `newalerttesting`
+-- -----------------------------------
+
+DROP TABLE IF EXISTS `newalerttesting`;
+CREATE TABLE `newalerttesting` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `panelid` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `seqno` varchar(100) CHARACTER SET utf8 NOT NULL,
+  `zone` varchar(3) CHARACTER SET utf8 NOT NULL,
+  `alarm` varchar(3) CHARACTER SET utf8 NOT NULL,
+  `createtime` datetime NOT NULL,
+  `receivedtime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `comment` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `status` char(1) CHARACTER SET utf8 NOT NULL DEFAULT 'O',
+  `sendtoclient` char(1) CHARACTER SET utf8 DEFAULT NULL,
+  `closedBy` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `closedtime` datetime DEFAULT NULL,
+  `sendip` varchar(15) CHARACTER SET utf8 DEFAULT NULL,
+  `alerttype` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `location` char(1) CHARACTER SET utf8 DEFAULT NULL,
+  `priority` char(1) CHARACTER SET utf8 DEFAULT NULL,
+  `AlertUserStatus` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `level` int(5) NOT NULL DEFAULT '0',
+  `sip2` varchar(15) CHARACTER SET utf8 DEFAULT NULL,
+  `c_status` char(1) CHARACTER SET utf8 NOT NULL DEFAULT 'C',
+  `auto_alert` int(5) NOT NULL DEFAULT '0',
+  `critical_alerts` varchar(5) CHARACTER SET utf8 NOT NULL DEFAULT 'n',
+  PRIMARY KEY (`id`,`receivedtime`),
+  KEY `receivedtime` (`receivedtime`),
+  KEY `panelid` (`panelid`),
+  KEY `status` (`status`),
+  KEY `closedBy` (`closedBy`),
+  KEY `createtime` (`createtime`),
+  KEY `sendip` (`sendip`),
+  KEY `sendtoclient` (`sendtoclient`),
+  KEY `zone` (`zone`),
+  KEY `alarm` (`alarm`),
+  KEY `level` (`level`),
+  KEY `sip2` (`sip2`),
+  KEY `auto_alert` (`auto_alert`),
+  KEY `critical_alerts` (`critical_alerts`),
+  KEY `idx_alerts_critical_1` (`status`,`sendtoclient`,`sendip`,`alerttype`,`receivedtime`,`critical_alerts`),
+  KEY `idx_alerts_critical_2` (`status`,`sendtoclient`,`sip2`,`alerttype`,`receivedtime`,`critical_alerts`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+/*!50100 PARTITION BY RANGE (to_days(`receivedtime`))
+(PARTITION p20240816 VALUES LESS THAN (739479) ENGINE = InnoDB,
+ PARTITION p20240817 VALUES LESS THAN (739480) ENGINE = InnoDB,
+ PARTITION p20240818 VALUES LESS THAN (739481) ENGINE = InnoDB,
+ PARTITION pMax VALUES LESS THAN MAXVALUE ENGINE = InnoDB) */;
+

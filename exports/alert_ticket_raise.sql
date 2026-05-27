@@ -1,0 +1,37 @@
+-- -----------------------------------
+-- Table structure for `alert_ticket_raise`
+-- -----------------------------------
+
+DROP TABLE IF EXISTS `alert_ticket_raise`;
+CREATE TABLE `alert_ticket_raise` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ticket_id` varchar(50) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `client` varchar(100) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `portal` varchar(155) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `ticket_status` int(11) DEFAULT NULL COMMENT '0=close, 1=active',
+  `created_date` datetime DEFAULT NULL,
+  `updated_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `close_date` datetime DEFAULT NULL,
+  `location` varchar(155) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `atmid` varchar(155) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `alert_type` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `dvr_ip` varchar(155) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `alarm_type` varchar(70) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `remarks` text CHARACTER SET utf8mb4,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('1', '20250416A1', 'Hitachi', NULL, '1', '2025-04-16 06:38:35', '2025-04-16 18:38:35', NULL, 'DARIASTHAN STREET  33   D STREET MANDVI  MUMBAI', 'B1373500', 'ATM Removal', '10.236.212.217', 'Alert', 'Testing');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('2', '20250417A20250417', 'Hitachi', NULL, '1', '2025-04-17 05:06:01', '2025-04-17 17:06:01', NULL, 'BO: LAXMIGANJ, KASHGANJ, AGRA', 'N2026100', 'Main Door sensor', '10.109.70.11', 'Alert', 'Dtgrfyhmn');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('3', '20250417A20250418', 'Hitachi', NULL, '1', '2025-04-17 05:16:10', '2025-04-17 17:16:10', NULL, 'MUMBAI,DADAR NC KELKAR ROAD, NEAR DADAR STATION-W', 'B1005900', 'Lobby PIR Motion sensor', '10.185.183.27', 'Alert', 'Tyfgdtygfedyuj');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('4', '20250424A20250418', 'Hitachi', NULL, '1', '2025-04-24 11:05:53', '2025-04-24 11:05:53', NULL, 'SHOP NO. 13, KERMANI BUIDLING ANAND ESTATE  SANE GURUJI  MARG, ARTHUR ROAD NAKA, MUMBAI-400015 ', 'B1178600', 'Panic Alert', '172.55.18.167', 'Alert', 'testtest bfvudyviudfh');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('5', '20250428A20250425', 'Hitachi', NULL, '1', '2025-04-28 11:59:58', '2025-04-28 11:59:58', NULL, 'ETAH  POST OFFICE RD.    CIVIL LINES    ETAH   ETAH   UTTAR PRADESH', 'B1156910', 'AC Removal', '172.55.29.119', 'Alert', 'Testing');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('6', '20250429A20250429', 'Hitachi', NULL, '1', '2025-04-29 03:41:06', '2025-04-29 15:41:06', NULL, 'BO: LAXMIGANJ, KASHGANJ, AGRA', 'N2026100', 'Hood Door Open Sensor', '10.109.70.11', 'Alert', 'Dgdncjchm');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('7', '20250618A20250430', 'Hitachi', NULL, '1', '2025-06-18 12:09:16', '2025-06-18 12:09:16', NULL, 'Public Inter College,Kisni Road,Bidhuna , Distt. Auraiya- 206243', 'T2733400', 'Main Door sensor', '172.55.29.93', 'Alert', 'ES not working due to misalignment.');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('8', '20250623A20250619', 'Hitachi', NULL, '1', '2025-06-23 01:44:24', '2025-06-23 13:44:25', NULL, 'BO: SADAR BAZAAR MAINPURI MAIN', 'B1367800', 'ATM Removal', '172.55.28.68', 'Alert', 'ES remove temporary basis dur Renovation  ');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('9', '20250623A20250624', 'Hitachi', NULL, '1', '2025-06-23 01:45:11', '2025-06-23 13:45:13', NULL, 'BO:MAINPURI MAIN CLUB GHAR, AGRA', 'B1034800', 'ATM Removal', '172.55.29.112', 'Alert', 'ES remove temporary basis dur Renovation  ');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('10', '20250627A20250624', 'Hitachi', NULL, '1', '2025-06-27 01:51:14', '2025-06-27 13:51:15', NULL, 'SHEOLI, KANPUR DEHAT', 'N3189300', 'Other Engineers Switch', '172.55.28.15', 'Alert', 'Hooter not working');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('11', '20250630A20250628', 'Hitachi', NULL, '1', '2025-06-30 10:37:00', '2025-06-30 10:37:00', NULL, 'Chandausi ghanta ghar,sambhal', 'D5009400', 'Other Engineers Switch', '172.55.28.157', 'Alert', 'ES not working ');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('12', '20250728A20250631', 'Hitachi', NULL, '1', '2025-07-28 11:07:08', '2025-07-28 11:07:08', NULL, 'BO: SAMBHAL SHUKLA MARKET', 'B1183100', 'Other Engineers Switch', '172.55.18.33', 'Alert', 'ES not working ');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('13', '20250813A20250729', 'Hitachi', NULL, '1', '2025-08-13 01:51:29', '2025-08-13 13:51:30', NULL, 'Suhag Nagar, Distt - Firozabad - 283203', 'N5296000', 'Main Door sensor', '172.55.29.185', 'Alert', 'ES not working due to misalignment.');
+INSERT INTO `alert_ticket_raise` (`id`, `ticket_id`, `client`, `portal`, `ticket_status`, `created_date`, `updated_date`, `close_date`, `location`, `atmid`, `alert_type`, `dvr_ip`, `alarm_type`, `remarks`) VALUES ('14', '20250827A20250814', 'Hitachi', NULL, '1', '2025-08-27 10:57:19', '2025-08-27 10:57:19', NULL, 'Vedanjali Market, Mainpuri Chauraha Shikohabad Distt- Firozabad 205135', 'N4417000', 'Back room Door sensor', '10.109.71.29', 'Alert', 'ES not working ');

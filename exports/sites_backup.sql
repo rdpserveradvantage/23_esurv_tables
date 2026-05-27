@@ -1,0 +1,53 @@
+-- -----------------------------------
+-- Table structure for `sites_backup`
+-- -----------------------------------
+
+DROP TABLE IF EXISTS `sites_backup`;
+CREATE TABLE `sites_backup` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
+  `Status` varchar(22) CHARACTER SET utf8 DEFAULT NULL,
+  `Phase` varchar(7) CHARACTER SET utf8 DEFAULT NULL,
+  `Customer` varchar(25) CHARACTER SET utf8 DEFAULT NULL,
+  `Bank` varchar(13) CHARACTER SET utf8 DEFAULT NULL,
+  `ATMID` varchar(40) CHARACTER SET utf8 DEFAULT NULL,
+  `ATMID_2` varchar(8) CHARACTER SET utf8 DEFAULT NULL,
+  `ATMID_3` varchar(8) CHARACTER SET utf8 DEFAULT NULL,
+  `ATMID_4` varchar(8) CHARACTER SET utf8 DEFAULT NULL,
+  `TrackerNo` varchar(40) CHARACTER SET utf8 DEFAULT NULL,
+  `ATMShortName` varchar(150) CHARACTER SET utf8 DEFAULT NULL,
+  `SiteAddress` text CHARACTER SET utf8,
+  `City` varchar(17) CHARACTER SET utf8 DEFAULT NULL,
+  `State` varchar(25) CHARACTER SET utf8 DEFAULT NULL,
+  `Zone` varchar(15) CHARACTER SET utf8 DEFAULT NULL,
+  `Panel_Make` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `OldPanelID` varchar(6) CHARACTER SET utf8 DEFAULT NULL,
+  `NewPanelID` varchar(6) CHARACTER SET utf8 DEFAULT NULL,
+  `DVRIP` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `DVRName` varchar(15) CHARACTER SET utf8 DEFAULT NULL,
+  `DVR_Model_num` varchar(250) CHARACTER SET utf8 DEFAULT NULL,
+  `Router_Model_num` varchar(250) CHARACTER SET utf8 DEFAULT NULL,
+  `UserName` varchar(5) CHARACTER SET utf8 DEFAULT NULL,
+  `Password` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
+  `live` char(1) CHARACTER SET utf8 NOT NULL DEFAULT 'N',
+  `current_dt` datetime DEFAULT NULL,
+  `mailreceive_dt` datetime DEFAULT NULL,
+  `eng_name` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `addedby` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `editby` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `site_remark` varchar(1000) CHARACTER SET utf8 DEFAULT NULL,
+  `PanelIP` varchar(25) CHARACTER SET utf8 DEFAULT NULL,
+  `AlertType` varchar(10) CHARACTER SET utf8 NOT NULL DEFAULT 'C',
+  `live_date` date DEFAULT NULL,
+  `CTS_LocalBranch` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `RouterIp` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `last_modified` int(11) NOT NULL DEFAULT '0',
+  `partial_live` int(6) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `live` (`live`),
+  KEY `OldPanelID` (`OldPanelID`),
+  KEY `DVRIP` (`DVRIP`),
+  KEY `NewPanelID` (`NewPanelID`),
+  KEY `Panel_Make` (`Panel_Make`),
+  KEY `live_date` (`live_date`)
+) ENGINE=MyISAM AUTO_INCREMENT=3028 DEFAULT CHARSET=latin1;
+

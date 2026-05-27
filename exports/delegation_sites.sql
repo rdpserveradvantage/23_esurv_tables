@@ -1,0 +1,178 @@
+-- -----------------------------------
+-- Table structure for `delegation_sites`
+-- -----------------------------------
+
+DROP TABLE IF EXISTS `delegation_sites`;
+CREATE TABLE `delegation_sites` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `terminal` varchar(20) DEFAULT NULL,
+  `SN` varchar(255) NOT NULL,
+  `ATMID` varchar(255) NOT NULL,
+  `Bank` varchar(255) NOT NULL,
+  `DVRIP` varchar(255) NOT NULL,
+  `Customer` varchar(255) NOT NULL,
+  `Zone` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `SN` (`SN`,`ATMID`)
+) ENGINE=MyISAM AUTO_INCREMENT=164 DEFAULT CHARSET=latin1;
+
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('131', '192.168.100.76', '6668', 'N4075620', 'PNB', '10.185.180.190', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('2', '192.168.100.76', '66', 'P1DCHY23', 'HDFC', '10.109.67.236', 'Diebold', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('3', '192.168.100.76', '962', 'P3ENMO08', 'HDFC', '172.55.18.100', 'Euronet', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('4', '192.168.100.76', '1061', 'P3ECRB01', 'HDFC', '172.55.26.171', 'Euronet', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('5', '192.168.100.76', '1100', 'P3ENJH21', 'HDFC', '10.126.36.213', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('6', '192.168.100.76', '1838', 'MN000804', 'indusind', '172.55.25.80', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('7', '192.168.100.76', '2184', 'P3DCHB17', 'HDFC', '10.185.181.207', 'Diebold', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('8', '192.168.100.76', '2303', 'P3DCHB23', 'HDFC', '172.55.26.99', 'Diebold', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('9', '192.168.100.76', '2611', 'P3ENMD77', 'HDFC', '10.109.8.206', 'Euronet', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('10', '192.168.100.76', '2633', 'P3ENOD58', 'HDFC', '10.109.11.130', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('11', '192.168.100.76', '2650', 'P3ENPJ16', 'HDFC', '172.51.14.38', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('12', '192.168.100.76', '2656', 'P3ENMX17', 'HDFC', '10.109.11.63', 'Euronet', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('13', '192.168.100.76', '6670', 'P3DCVX77', 'HDFC', '10.109.66.24', 'Diebold', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('14', '192.168.100.76', '2853', 'ZBL8034', 'BOI', '172.55.27.107', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('15', '192.168.100.76', '2865', 'N3178600', 'PNB', '172.55.27.52', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('16', '192.168.100.76', '2876', 'ZCE8107', 'BOI', '172.55.27.123', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('17', '192.168.100.76', '3011', 'P3ENNZ04', 'HDFC', '172.55.27.215', 'Euronet', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('18', '192.168.100.76', '3042', 'ZBD8041', 'BOI', '10.109.64.244', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('19', '192.168.100.76', '3164', 'ZRA9053', 'BOI', '172.55.24.91', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('20', '192.168.100.76', '3064', 'ZBD8059', 'BOI', '172.55.24.35', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('21', '192.168.100.76', '3107', 'ZBB8048', 'BOI', '172.55.18.50', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('22', '192.168.100.76', '3274', 'ZID9078', 'BOI', '10.185.182.8', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('23', '192.168.100.76', '4284', 'T3178510', 'PNB', '172.55.28.5', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('24', '192.168.100.76', '3358', 'NB016200', 'PNB', '10.109.8.177', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('25', '192.168.100.76', '3418', 'ZAG9068', 'BOI', '172.55.24.213', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('26', '192.168.100.76', '3427', 'B2086010', 'PNB', '10.109.64.136', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('27', '192.168.100.76', '3463', 'ZBG8013', 'BOI', '172.55.24.231', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('28', '192.168.100.76', '3475', 'B1367800', 'PNB', '172.55.28.68', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('29', '192.168.100.76', '3492', 'B1041110', 'PNB', '10.109.71.104', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('30', '192.168.100.76', '3584', 'ZPU9128', 'BOI', '172.55.21.39', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('31', '192.168.100.76', '3591', 'ZNS9049', 'BOI', '10.185.182.47', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('32', '192.168.100.76', '3662', 'T3349200', 'PNB', '10.109.65.106', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('33', '192.168.100.76', '3769', 'DE015900', 'PNB', '172.55.18.68', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('34', '192.168.100.76', '3777', 'T1BY000410026', 'SBI', '10.185.183.119', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('35', '192.168.100.76', '3786', 'B1163100', 'PNB', '172.55.28.244', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('36', '192.168.100.76', '3801', 'A1134610', 'PNB', '10.109.71.70', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('37', '192.168.100.76', '3803', 'ZPU9136', 'BOI', '172.55.21.176', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('38', '192.168.100.76', '3807', 'T1130320', 'PNB', '172.55.30.93', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('39', '192.168.100.76', '3886', 'P3ENLL82', 'HDFC', '172.55.23.171', 'Euronet', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('40', '192.168.100.76', '4013', 'N2029320', 'PNB', '172.55.30.103', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('41', '192.168.100.76', '4041', 'N4481200', 'PNB', '10.109.72.179', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('42', '192.168.100.76', '4042', 'A2789500', 'PNB', '172.55.26.54', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('43', '192.168.100.76', '4103', 'N3298100', 'PNB', '172.55.23.223', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('44', '192.168.100.76', '4121', 'D9200500', 'PNB', '172.55.20.28', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('45', '192.168.100.76', '4227', 'B1493100', 'PNB', '172.55.23.129', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('46', '192.168.100.76', '4241', 'N2111810', 'PNB', '172.55.23.235', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('47', '192.168.100.76', '4261', 'B1663400', 'PNB', '172.55.22.112', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('48', '192.168.100.76', '4343', 'E1111210', 'PNB', '172.55.19.44', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('49', '192.168.100.76', '4446', 'B1082710', 'PNB', '172.55.30.87', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('50', '192.168.100.76', '4458', 'E2188910', 'PNB', '172.55.22.119', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('51', '192.168.100.76', '4578', 'B1064820', 'PNB', '10.185.182.15', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('52', '192.168.100.76', '4580', 'N5606300', 'PNB', '172.55.22.102', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('53', '192.168.100.76', '4591', 'B1640700', 'PNB', '172.55.22.170', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('54', '192.168.100.76', '4603', 'T1163220', 'PNB', '172.55.22.44', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('55', '192.168.100.76', '4637', 'T2736600', 'PNB', '172.55.23.82', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('56', '192.168.100.76', '4734', 'A1152510', 'PNB', '172.55.23.221', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('57', '192.168.100.76', '4793', 'N3025600', 'PNB', '172.55.20.213', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('58', '192.168.100.76', '4795', 'B1043400', 'PNB', '10.109.10.90', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('59', '192.168.100.76', '4799', 'N4008300', 'PNB', '10.236.40.85', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('60', '192.168.100.76', '4807', 'NB020300', 'PNB', ' 172.55.51.212', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('61', '192.168.100.74', '4864', 'B1004410', 'PNB', '10.109.11.143', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('62', '192.168.100.76', '4888', 'N4058700', 'PNB', '172.55.22.76', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('63', '192.168.100.76', '4889', 'N3474800', 'PNB', '10.236.40.123', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('64', '192.168.100.76', '4902', 'N6314300', 'PNB', '172.55.22.98', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('65', '192.168.100.76', '4913', 'B1234000', 'PNB', '10.109.11.151', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('66', '192.168.100.76', '4969', 'D6395500', 'PNB', '10.236.40.185', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('67', '192.168.100.76', '4970', 'N4293400', 'PNB', '172.55.20.122', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('68', '192.168.100.76', '4976', 'N3615400', 'PNB', '172.55.18.24', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('69', '192.168.100.76', '4987', 'N5103500', 'PNB', '10.109.10.106', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('70', '192.168.100.76', '5089', 'N3492600', 'PNB', '10.236.40.55', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('71', '192.168.100.76', '5180', 'N1975100', 'PNB', '10.109.11.149', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('72', '192.168.100.76', '5300', 'N3251700', 'PNB', '10.236.212.212', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('73', '192.168.100.76', '5409', 'P3ENOD23', 'HDFC', '10.109.9.139', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('74', '192.168.100.76', '5480', 'N6015600', 'PNB', '10.185.182.104', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('75', '192.168.100.76', '5490', 'TG308000', 'PNB', '10.236.40.179', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('76', '192.168.100.76', '5498', 'B1092510', 'PNB', '10.109.9.136', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('77', '192.168.100.76', '5532', 'B1184410', 'PNB', '10.109.64.214', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('78', '192.168.100.76', '5573', 'B2085500', 'PNB', '172.55.17.34', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('79', '192.168.100.76', '5576', 'N3354100', 'PNB', '10.185.180.136', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('80', '192.168.100.76', '5638', 'B1138010', 'PNB', '10.109.70.160', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('81', '192.168.100.76', '5679', 'T9221000', 'PNB', '10.185.180.240', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('82', '192.168.100.76', '5707', 'MC003326', 'indusind', '10.109.70.81', 'Diebold', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('83', '192.168.100.76', '5738', 'N2235400', 'PNB', '10.185.180.75', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('84', '192.168.100.76', '5765', 'N2028300', 'PNB', '10.185.181.39', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('85', '192.168.100.76', '5781', 'MC002523', 'indusind', '10.248.0.55', 'Diebold', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('86', '192.168.100.76', '5787', 'MC004863', 'indusind', '10.248.1.60', 'Diebold', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('87', '192.168.100.76', '5905', 'MC083309', 'indusind', '10.109.70.83', 'Diebold', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('88', '192.168.100.76', '5937', 'A2825400', 'PNB', '10.109.64.156', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('89', '192.168.100.76', '5995', 'A2921600', 'PNB', '10.185.181.173', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('90', '192.168.100.76', '6097', 'DCH12059', 'DLB', '10.109.70.62', 'AGS', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('91', '192.168.100.76', '6109', 'T2071420', 'PNB', '10.185.182.33', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('92', '192.168.100.76', '6114', 'T5109400', 'PNB', '10.109.8.160', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('93', '192.168.100.76', '6117', 'A7025000', 'PNB', '10.185.182.43', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('94', '192.168.100.76', '6202', 'B1043700', 'PNB', '10.185.182.209', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('95', '192.168.100.76', '6221', 'AGON8208', 'Kotak', '10.109.71.28', 'Euronet', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('96', '192.168.100.76', '6227', 'B1045310', 'PNB', '172.55.17.77', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('97', '192.168.100.76', '6245', 'B1053220', 'PNB', '172.55.22.72', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('98', '192.168.100.76', '6386', 'T1BY000410028', 'SBI', '10.109.65.206', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('99', '192.168.100.76', '6397', 'P3ENJR70', 'HDFC', '10.109.65.49', 'Euronet', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('100', '192.168.100.76', '6454', 'P3ECBH12', 'HDFC', '10.109.70.113', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('101', '192.168.100.76', '6458', 'P3ENUQ44', 'HDFC', '10.109.64.161', 'Euronet', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('102', '192.168.100.76', '6461', 'EN801572', 'IDFC', '172.51.16.40', 'Euronet', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('103', '192.168.100.76', '6477', 'B1661900', 'PNB', '10.137.0.45', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('104', '192.168.100.76', '6520', 'P3ENPF22', 'HDFC', '10.109.64.237', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('105', '192.168.100.76', '6532', 'P3ENJH58', 'HDFC', '10.109.64.169', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('106', '192.168.100.76', '6539', 'MHHAO053', 'Yes Bank', '10.109.64.141', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('107', '192.168.100.76', '6554', 'P3ECJJ03', 'HDFC', '10.185.181.108', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('108', '192.168.100.76', '6684', 'P3ECDB03', 'HDFC', '10.109.66.96', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('109', '192.168.100.76', '6695', 'P3ENCS13', 'HDFC', '10.109.66.186', 'Euronet', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('110', '192.168.100.76', '6734', 'B1676200', 'PNB', '10.109.70.243', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('111', '192.168.100.76', '6747', 'T1BY000335033', 'SBI', '10.109.68.53', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('112', '192.168.100.76', '6754', 'T1BY000820038', 'SBI', '10.109.67.211', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('113', '192.168.100.76', '6766', 'T1BY014388426', 'SBI', '10.109.67.158', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('114', '192.168.100.76', '6779', 'T1BY000335028', 'SBI', '10.109.67.142', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('115', '192.168.100.76', '6791', 'T1BY008254041', 'SBI', '10.109.67.143', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('116', '192.168.100.76', '6802', 'T1BY000066127', 'SBI', '10.109.67.127', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('117', '192.168.100.76', '6826', 'T1NY003303395', 'SBI', '10.109.67.148', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('118', '192.168.100.76', '6827', 'T2136400', 'PNB', '172.55.19.31', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('119', '192.168.100.76', '6833', 'N1589200', 'PNB', '10.109.70.137', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('120', '192.168.100.76', '6840', 'B1229700', 'PNB', '10.109.69.204', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('121', '192.168.100.76', '6926', 'T3357100', 'PNB', '10.109.69.123', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('122', '192.168.100.76', '6959', 'B1144520', 'PNB', '10.109.69.122', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('123', '192.168.100.76', '6989', 'P3ENVR02', 'HDFC', '10.109.67.225', 'Euronet', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('124', '192.168.100.76', '6993', 'T1BH00493009', 'SBI TOM 2', '10.109.70.28', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('125', '192.168.100.76', '6999', 'T1BY003303412', 'SBI TOM 2', '10.109.69.244', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('126', '192.168.100.76', '7016', 'T1NY000755133', 'SBI TOM 2', '10.109.66.252', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('127', '192.168.100.76', '7017', 'T1BH006335052', 'SBI TOM 2', '10.109.68.160', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('128', '192.168.100.76', '7021', 'T1NY007249109', 'SBI TOM 2', '10.109.68.76', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('129', '192.168.100.76', '7023', 'T1NH000900102', 'SBI TOM 2', '10.109.69.236', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('130', '192.168.100.76', '7028', 'T1NY000816226', 'SBI TOM 2', '10.109.66.224', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('132', '192.168.100.76', '453', 'MN004835', 'IndusInd', '172.51.14.222', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('133', '192.168.100.76', '6679', 'P3ENHD10', 'HDFC', '10.109.66.104', 'Euronet', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('134', '192.168.100.76', '3765', 'N4247100', 'PNB', '172.55.29.214', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('135', '192.168.100.76', '1219', 'P3ENRI24', 'HDFC', '172.51.16.45', 'Euronet', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('136', '192.168.100.76', '3708', 'ZGZ9054', 'BOI', '172.55.21.130', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('137', '192.168.100.76', '6060', 'N4300300', 'PNB', '10.185.181.202', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('138', '192.168.100.76', '4068', 'A1188710', 'PNB', '172.55.29.56', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('139', '192.168.100.76', '6475', 'A2130900', 'PNB', '10.109.65.136', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('140', '192.168.100.76', '4711', 'N2360400', 'PNB', '172.55.22.11', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('141', '192.168.100.76', '5342', 'N2523110', 'PNB', '172.55.18.170', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('142', '192.168.100.74', '5661', 'B1010910', 'PNB', '172.55.29.247', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('143', '192.168.100.74', '6543', 'B1009210', 'PNB', '10.109.64.124', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('145', '192.168.100.76', '17', 'SPCPS756', 'ICICI', '10.109.10.150', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('146', '192.168.100.76', '5844', 'B1485600', 'PNB', '172.55.17.26', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('147', '192.168.100.76', '6301', 'P3ECHY18', 'HDFC', '172.51.16.37', 'Euronet', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('148', '192.168.100.76', '6040', 'N1104610', 'PNB', '172.55.27.232', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('149', '192.168.100.76', '4017', 'NB015300', 'PNB', '172.55.28.110', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('150', '192.168.100.78', '3179', 'ZID8052', 'BOI', '172.55.27.36', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('151', '192.168.100.78', '3836', 'NG329600', 'PNB', '172.55.19.51', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('152', '192.168.100.78', '5609', 'N5076500', 'PNB', '172.55.30.94', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('153', '', '6112', 'B1005900', 'PNB', '10.185.183.27', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('154', '192.168.100.76', '7287', 'T1BY003303415', 'SBI TOM 2', '10.109.71.135', 'Hitachi', 'South');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('156', '192.168.100.76', '3649', 'ZDD8011', 'BOI', '172.55.27.46', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('157', '192.168.100.76', '593', 'P3ENGG35', 'HDFC', '10.109.8.13', 'Euronet', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('158', '192.168.100.76', '5555', 'N5076500', 'PNB', '172.55.30.94', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('159', '192.168.100.76', '4622', 'B1183900', 'PNB', '172.55.22.160', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('160', '192.168.100.76', '6758', 'T1BY000432251', 'SBI', '10.109.67.220', 'Hitachi', 'East');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('161', '192.168.100.76', '3308', 'N2614500', 'PNB', '10.185.183.60', 'Hitachi', 'North');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('162', '192.168.100.76', '3383', 'B1035710', 'PNB', '172.55.29.200', 'Hitachi', 'West');
+INSERT INTO `delegation_sites` (`id`, `terminal`, `SN`, `ATMID`, `Bank`, `DVRIP`, `Customer`, `Zone`) VALUES ('163', '192.168.100.76', '5406', 'A1078510', 'PNB', '172.55.28.53', 'Hitachi', 'East');
